@@ -16,5 +16,5 @@ This app copies all the data of these partitions in the form of .img files to yo
 
 # Caution
 1. Do not try to downgrade  your phone using this tool because when you try to do so, anti roll-back protection kicks in and your device will get HARDBRICKED. Use it only when your installed OS version and backed up OS version are same.
-2. This app cannot backup userdata due to some limitations. When you try to backup using this app, you are actually backing up temporarily /sdcard. These backup images will be temporarily stored in your /sdcard partition. So when you backup userdata partition, the /sdcard partition starts backing up itself and this backup file will be stored in /sdcard partition again which leads to an infinite loop. So backing up userdata using this app is not possible.
+2. This app cannot backup userdata due to some limitations. When you try to backup using this app, you are actually backing up temporarily to /sdcard. These backup images will be temporarily stored in your /sdcard partition. So when you backup userdata partition, the /sdcard partition starts backing up itself and this backup file will be stored in /sdcard partition again which leads to an infinite loop. So backing up userdata using this app is not possible.
 3. Connect only 1 Phone during the process.
