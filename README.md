@@ -2,9 +2,8 @@
 Backup the NAND flash memory of your mobile phone (USERDATA EXCLUDED!!)
 
 # Requirements
-1. A windows PC with adb properly installed.
-2. Rooted android device.
-3. Atleast 20GB of free space in both phone and PC.
+1. Rooted android device.
+2. Atleast 20GB of free space in both phone and PC.
 
 # How it works
 This application creates a backup of NAND flash memory of your device. This works on both A/B or A only devices.
