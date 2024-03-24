@@ -1,3 +1,5 @@
+#ifndef _HELPER_HPP_
+#define _HELPER_HPP_
 #include <iostream>
 
 class adb {
@@ -10,6 +12,8 @@ class adb {
     virtual void connect() = 0;
     virtual void pull() final;
     virtual void cleanup() final;
+    virtual void escalate() final;
+    virtual void pair();
 };
 
 class usbD: public adb {
@@ -22,3 +26,5 @@ class wirelessD: public adb {
     virtual void pair() final;
     virtual void connect() final;
 };
+
+#endif

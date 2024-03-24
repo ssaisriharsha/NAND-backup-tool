@@ -5,6 +5,22 @@ void adb::display_devices() {
     system("adb devices");
 }
 
+void adb::setSerial(std::string s) {
+    serial = s;
+}
+
+void adb::pair(){}
+
+std::string adb::getSerial() {
+    return serial;
+}
+
+void adb::escalate() {
+    std::string cmd = "adb -s " + getSerial() + " root";
+    system(cmd.c_str());
+    std::cout << "privilages escalated successfully." << std::endl;
+}
+
 void usbD::connect() {
     std::cout << "Enter the serial number of the device you want to connect to: " << std::endl;
     std::string s;
@@ -12,25 +28,20 @@ void usbD::connect() {
     setSerial(s);
 }
 
-void adb::setSerial(std::string s) {
-    serial = s;
-}
-
 void adb::pull() {
     system("mkdir androidBackup");
-    system("adb root");
-    system("adb pull /dev/block/bootdevice/by-name/* androidBackup/");
+    std::string pull_m = "adb -s " + getSerial() +  " pull /dev/block/bootdevice/by-name androidBackup/";
+    system(pull_m.c_str());
 }
 
 void adb::cleanup() {
     std::cout << "Cleaning up" << std::endl;
     system("adb kill-server");
+    std::cout << "Thanks for using this app :)!" << std::endl;
     system("pause");
 }
 
-std::string adb::getSerial() {
-    return serial;
-}
+
 
 void wirelessD::pair() {
     std::string ip;
