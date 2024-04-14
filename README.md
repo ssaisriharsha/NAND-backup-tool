@@ -33,5 +33,5 @@ This app copies all the data in the form of .img files to your PC, so you can re
 
 # Credits
 
-All thanks to [@anasfanani](https://github.com/anasfanani/), [@tiann](https://github.com/tiann/), [@evdenis](https://github.com/evdenis/adb_root), [@wuxianlin](https://github.com/wuxianlin) :)
+Thanks to [@anasfanani](https://github.com/anasfanani/), [@tiann](https://github.com/tiann/), [@evdenis](https://github.com/evdenis/adb_root), [@wuxianlin](https://github.com/wuxianlin) :)
 
